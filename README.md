@@ -18,7 +18,7 @@ The purpose of this image is to have a platform for explorative analytics with P
 When running the either of the commands below a container is started with the current directory mounted and accessible from the Jupyter notebook running at port 8888.
 
 ```
-docker run --rm -it -p 8888 -v $(pwd):/home/foobar/ peltikalle/analytics-playground
+docker run --rm -it -p 8888 -v $(pwd):/home/foobar/work/ peltikalle/analytics-playground
 ```
 
 or
