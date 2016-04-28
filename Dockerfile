@@ -32,6 +32,6 @@ RUN python3.4 -m octave_kernel.install
 
 ADD scripts/launch_notebook.sh /home/foobar/scripts/launch_notebook.sh
 
-USER foobar
+CMD ["/bin/bash", "/home/foobar/scripts/launch_notebook.sh"]
 
-ENTRYPOINT ["/home/foobar/scripts/launch_notebook.sh"]
+USER foobar
