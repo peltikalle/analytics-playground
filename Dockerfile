@@ -9,7 +9,6 @@ RUN yum update -y && yum install -y \
 		freetype-devel \
 		blas-devel \
 		lapack-devel \
-		octave \
 	&& yum clean all
 
 RUN python3.4 -m pip install pip --upgrade && \
@@ -25,10 +24,7 @@ RUN python3.4 -m pip install pip --upgrade && \
 		seaborn
 
 RUN python3.4 -m pip install \
-    	boto \
-    	octave_kernel
-
-RUN python3.4 -m octave_kernel.install
+    	boto
 
 ADD scripts/launch_notebook.sh /home/foobar/scripts/launch_notebook.sh
 

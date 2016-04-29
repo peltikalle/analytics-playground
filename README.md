@@ -1,6 +1,6 @@
 ## Analytics playground
 
-The purpose of this image is to have a platform for explorative analytics with Python and Octave. Python version is currently 3.4.3 but this might change as time passes. A number of Python packages are included that you might need when doing analyses. 
+The purpose of this image is to have a platform for explorative analytics with Python. Python version is currently 3.4.3 but this might change as time passes. A number of Python packages are included that you might need when doing analyses. 
 
 ### Packages installed:
 
@@ -26,9 +26,6 @@ or
 ```
 ./start_container.sh
 ```
-
-When creating new notebook you can select either Python3.4.3 or Octave kernels.
-
 
 ## Installation
 
