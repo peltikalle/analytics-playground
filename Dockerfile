@@ -9,6 +9,7 @@ RUN yum update -y && yum install -y \
 		freetype-devel \
 		blas-devel \
 		lapack-devel \
+		postgresql-devel \
 	&& yum clean all
 
 RUN python3.4 -m pip install pip --upgrade && \
@@ -24,7 +25,8 @@ RUN python3.4 -m pip install pip --upgrade && \
 		seaborn
 
 RUN python3.4 -m pip install \
-    	boto
+    	boto \
+    	psycopg2
 
 ADD scripts/launch_notebook.sh /home/foobar/scripts/launch_notebook.sh
 
