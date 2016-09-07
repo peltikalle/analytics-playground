@@ -26,7 +26,10 @@ RUN python3.4 -m pip install pip --upgrade && \
 
 RUN python3.4 -m pip install \
     	boto \
-    	psycopg2
+    	psycopg2 \
+    	SQLAlchemy \
+    	iPython-SQL \
+    	SimpleJSON
 
 ADD scripts/launch_notebook.sh /home/foobar/scripts/launch_notebook.sh
 

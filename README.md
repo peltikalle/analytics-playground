@@ -13,6 +13,9 @@ The purpose of this image is to have a platform for explorative analytics with P
 - matplotlib
 - seaborn
 - psycopg2
+- SQLAlchemy
+- iPython-SQL
+- SimpleJSON
 
 ## Starting a container
 
